@@ -27,9 +27,9 @@ body {
 }
 
 .rating__card {
+    max-width: 320px;
     background: linear-gradient(45deg, hsl(213, 19%, 18%, 0.1), hsl(213, 19%, 18%));
     padding: 20px;
-    padding-bottom: 20px;
     border-radius: 20px;
 }
 
@@ -108,20 +108,13 @@ body {
     color: hsl(25, 97%, 53%);
     cursor: pointer;
 }
-/* utility classes */
 
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+/* Media Queries */
+@media screen and (max-width: 320px) {
+    .rating__card {
+        margin: 1rem;
+    }
 }
-
-.rating__card {
-    width: 320px;
-}
-
 
 
 
